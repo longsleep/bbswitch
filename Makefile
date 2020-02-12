@@ -5,6 +5,8 @@ KVERSION := $(shell uname -r)
 KDIR := /lib/modules/$(KVERSION)/build
 PWD := "$$(pwd)"
 
+CC=gcc-9
+
 ifdef DEBUG
 CFLAGS_$(obj-m) := -DDEBUG
 endif
